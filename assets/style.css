@@ -13,14 +13,48 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: aqua;
+    background-color: #003153;
     padding: 20px;
 }
 
 h1 {
-    background-color: brown;
+    background-color: #A42A04;
+}
+
+main {
+    background-color: aliceblue;
 }
 
 header nav a {
     margin: 10px;
+    color: gold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #003153;
+}
+
+footer a {
+    color: gold;
+}
+
+.about,
+.work {
+    display: flex;
+}
+
+.about-aside,
+.work-aside,
+.contact-aside {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+    border-right: 3px solid black;
+}
+
+.about-sec,
+.contact-sec {
+    flex: 3;
 }

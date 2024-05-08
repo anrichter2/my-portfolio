@@ -55,6 +55,7 @@ footer a {
 }
 
 .about-sec,
-.contact-sec {
+.contact-sec,
+.work-div {
     flex: 3;
 }

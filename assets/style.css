@@ -20,7 +20,7 @@ body {
 /*Makes the header into a flexbox that properly spaces its' content both horizontally and vertically*/
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--primary);
@@ -33,9 +33,11 @@ footer aside h2 {
     padding: 10px;
 }
 
-/*Making the nav bar at the top bold*/
+/*Makes the elements of the nav bar at the top bold*/
 header a {
     font-weight: 900;
+    margin: 10px;
+    color: var(--tertiary);
 }
 
 p {
@@ -45,11 +47,6 @@ p {
 
 main {
     background-color: aliceblue;
-}
-
-header nav a {
-    margin: 10px;
-    color: gold;
 }
 
 /*This part makes the titles appear over the hyperlinked images*/
@@ -102,11 +99,6 @@ footer a {
     flex: 3;
 }
 
-.contact-sec {
-    text-align: center;
-    line-height: 2;
-}
-
 /*Creates a flexbox for the hyperlinked images to be house in.*/
 .work-div {
     display: flex;
@@ -114,7 +106,7 @@ footer a {
     flex-wrap: wrap;
 }
 
-/*Makes the large and small hyperlinked images have relative positioning so their h3 titles will display over them. Also defines their size and margins on the screen.*/
+/*Makes the large and small hyperlinked images have relative positioning so their h3 titles will display over them. Also defines the sizes of the section elements that house the hyperlinked images.*/
 .large-image {
     position: relative;
     width: 100%;
@@ -127,7 +119,7 @@ footer a {
     margin: 1% 5%;
 }
 
-/*Defines the sizes of the hyperlinked images*/
+/*Defines the sizes of the hyperlinked images inside the section element they are in*/
 .large-image img {
     width: 100%;
     height: 500px;
@@ -143,6 +135,19 @@ footer a {
 .large-image {
     border: 5px solid var(--secondary);
     
+}
+
+.contact-sec {
+    text-align: center;
+    line-height: 2;
+}
+
+/*id selectors*/
+/*used to define the size of my self picture at the top of the webpage*/
+#self-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 /*media queries to make the content dynamically change based on screen size*/

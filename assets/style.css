@@ -106,6 +106,10 @@ footer a {
     flex-wrap: wrap;
 }
 
+.work-div a {
+    display: flex;
+}
+
 /*Makes the large and small hyperlinked images have relative positioning so their h3 titles will display over them. Also defines the sizes of the section elements that house the hyperlinked images.*/
 .large-image {
     position: relative;
